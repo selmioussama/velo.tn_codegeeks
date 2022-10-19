@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\EventController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,3 +27,6 @@ Route::middleware([
 });
 
 route::get('/redirect',[HomeController::class,'redirect']);
+
+
+Route::get('/events',[EventController::class,'index']);
