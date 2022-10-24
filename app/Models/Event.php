@@ -9,12 +9,16 @@ class Event extends Model
 {
     use HasFactory;
 
-    protected $table = 'events';
-           protected $fillable = [
+     protected $fillable = [
             'title',
             'description',
             'place',
             'start_date',
-            'end_date'
-            ];
+            'end_date',
+
+        ];
+
+       public function feedbacks(){
+      return $this->hasMany(Feedback::class);
+      }
 }

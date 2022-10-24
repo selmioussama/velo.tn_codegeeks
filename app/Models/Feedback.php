@@ -9,10 +9,11 @@ class Feedback extends Model
 {
     use HasFactory;
 
-        protected $table = 'feedback';
-        protected $fillable = [
-        'event_id',
-        'description',
-        'date_feedback'
-        ];
+      protected $fillable = [
+                'description',
+            ];
+
+            public function event(){
+             return $this->belongsTo(Event::class);
+              }
 }
