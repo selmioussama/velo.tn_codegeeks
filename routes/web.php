@@ -2,7 +2,8 @@
 
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\EventController;
+use App\Http\Controllers\FeedbackController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,3 +28,20 @@ Route::middleware([
 });
 
 route::get('/redirect',[HomeController::class,'redirect']);
+
+
+Route::get('/events',[EventController::class,'index'])->name('event.showevent');
+Route::get('/eventsfront',[EventController::class,'show'])->name('event.show');
+Route::get('/createEvent',[EventController::class,'create'])->name('event.create');
+Route::get('/storeEvent',[EventController::class,'store'])->name('event.store');
+Route::get('/eventdelete/{id?}',[EventController::class,'destroy'])->name('event.delete');
+Route::get('/eventEdit/{id?}',[EventController::class,'edit'])->name('event.edit');
+Route::get('/updateEvent/{id?}',[EventController::class,'update'])->name('event.update');
+
+
+Route::get('/feedbacks',[FeedbackController::class,'index'])->name('feedback.showfeedback');
+Route::get('/createFeedback',[FeedbackController::class,'create'])->name('feedback.create');
+Route::get('/storeFeedback',[FeedbackController::class,'store'])->name('feedback.store');
+Route::get('/feedbackdelete/{id?}',[FeedbackController::class,'destroy'])->name('feedback.delete');
+Route::get('/feedbackEdit/{id?}',[FeedbackController::class,'edit'])->name('feedback.edit');
+Route::get('/updateFeedback/{id?}',[FeedbackController::class,'update'])->name('feedback.update');
