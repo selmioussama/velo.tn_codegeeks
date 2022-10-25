@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AssociationController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,3 +28,4 @@ Route::middleware([
 });
 
 route::get('/redirect',[HomeController::class,'redirect']);
+Route::resource('associations', AssociationController::class);

@@ -45,16 +45,13 @@
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="pages/forms/basic_elements.html">
-                <span class="menu-title">Form Elements</span>
+            <a class="nav-link" href="/associations">
+                <span class="menu-title">Associations</span>
                 <i class="icon-book-open menu-icon"></i>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="pages/charts/chartist.html">
-                <span class="menu-title">Charts</span>
-                <i class="icon-chart menu-icon"></i>
-            </a>
+ 
         </li>
         <li class="nav-item">
             <a class="nav-link" href="pages/tables/basic-table.html">
