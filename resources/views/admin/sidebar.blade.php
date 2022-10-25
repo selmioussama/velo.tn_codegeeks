@@ -22,6 +22,8 @@
         <li class="nav-item">
             <a class="nav-link" href="index.html">
                 <span class="menu-title">Dashboard</span>
+                <a href="{{ route("velo") }}">velo</a>
+
                 <i class="icon-screen-desktop menu-icon"></i>
             </a>
         </li>
