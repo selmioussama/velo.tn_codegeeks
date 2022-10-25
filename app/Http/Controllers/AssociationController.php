@@ -20,6 +20,14 @@ class AssociationController extends Controller
         return view('admin.associations.index', compact('data'))->with('i', (request()->input('page', 1) - 1) * 5);
     }
 
+    public function indexs()
+    {
+        //
+        $data = Association::all();
+
+        return view('associations', compact('data'));
+    }
+
     /**
      * Show the form for creating a new resource.
      *

@@ -62,6 +62,7 @@ class DonController extends Controller
             $don->associations()->attach((int)$val);
         }
         //
+        return redirect()->route('dons.index')->with('success', 'Donation Added successfully.');
 
     }
 

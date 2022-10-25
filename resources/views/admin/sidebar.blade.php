@@ -51,6 +51,12 @@
             </a>
         </li>
         <li class="nav-item">
+            <a class="nav-link" href="/dons">
+                <span class="menu-title">Donations</span>
+                <i class="icon-book-open menu-icon"></i>
+            </a>
+        </li>
+        <li class="nav-item">
  
         </li>
         <li class="nav-item">

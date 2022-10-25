@@ -31,3 +31,4 @@ Route::middleware([
 route::get('/redirect',[HomeController::class,'redirect']);
 Route::resource('associations', AssociationController::class);
 Route::resource('dons', DonController::class);
+route::get('/association',[AssociationController::class,'indexs']);
