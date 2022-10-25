@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<base href="/public">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -25,29 +26,32 @@
                           <div class="card">
                            <div class="card-body">
                            <p class="card-description"> Edit feedback: </p>
-                           <form class="forms-sample" action="{{ route('event.update' , $event->id) }}" method="get">
-                           <div class="form-group">
-                            <label for="exampleInputEmail3">Title</label>
-                            <input type="text" class="form-control" name="title" placeholder="title" value="{{ $event->title}}">
-                           </div>
-                            <div class="form-group">
-                             <label for="exampleInputEmail3">Description</label>
-                             <input type="text" class="form-control" name="description" placeholder="description" value="{{ $event->description}}" >
-                             </div>
-                              </div>
-                              <div class="form-group">
-                               <label for="exampleInputEmail3"><Place/label>
-                               <input type="text" class="form-control" name="place" id="place" placeholder="place" value="{{ $event->place}}">
-                               </div>
-                              <div class="form-group">
-                               <label for="exampleInputEmail3">Start date</label>
-                              <input type="date" class="form-control" name="start_date" id="start_date" placeholder="startdate" value="{{ $event->start_date}}" >
-                               </div>
-                               <div class="form-group">
-                                <label for="exampleInputEmail3">End date</label>
-                                <input type="date" class="form-control" name="end_date" id="end_date" placeholder="end date" value="{{ $event->end_date}}"">
-                                </div>
-                           <button type="submit"  class="btn btn-primary mr-2">update</button>
+                                <form class="forms-sample" action="{{ route('event.update' , $event->id) }}" method="get">
+                                   <div class="form-group">
+                                    <label for="exampleInputEmail3">Title</label>
+                                   <input type="text" class="form-control" name="title" id="title" placeholder="place" value="{{ $event->title}}" >
+                                     </div>
+                                  <div class="form-group">
+                                 <label for="exampleInputEmail3">Place</label>
+                                 <input type="text" class="form-control" name="place" id="description" placeholder="place" value="{{ $event->place}}" >
+                                 </div>
+
+                                 <div class="form-group">
+                                 <label for="exampleInputEmail3">Description</label>
+                                 <input type="text" class="form-control" name="description" id="description" placeholder="description" value="{{ $event->description}}" >
+                                 </div>
+                                 <div class="form-group">
+                                 <label for="exampleInputEmail3">Start date</label>
+                                  <input type="date" class="form-control" name="start_date" id="start_date" placeholder="end date" value="{{ $event->start_date}}" >
+                                  </div>
+                                 <div class="form-group">
+                                 <label for="exampleInputEmail3">End date</label>
+                                  <input type="date" class="form-control" name="end_date" id="end_date" placeholder="end date" value="{{ $event->end_date}}" >
+                                 </div>
+
+
+
+                                <button type="submit"  class="btn btn-primary mr-2">update</button>
                            </form>
                              </div>
                              </div>
