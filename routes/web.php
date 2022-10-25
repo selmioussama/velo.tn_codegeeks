@@ -31,6 +31,7 @@ route::get('/redirect',[HomeController::class,'redirect']);
 
 
 Route::get('/events',[EventController::class,'index'])->name('event.showevent');
+Route::get('/eventsfront',[EventController::class,'show'])->name('event.show');
 Route::get('/createEvent',[EventController::class,'create'])->name('event.create');
 Route::get('/storeEvent',[EventController::class,'store'])->name('event.store');
 Route::get('/eventdelete/{id?}',[EventController::class,'destroy'])->name('event.delete');

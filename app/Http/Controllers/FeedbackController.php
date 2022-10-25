@@ -25,8 +25,9 @@ class FeedbackController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create()
-    {
-        return view("admin/feedback/ajoutfeedback");
+    {    $listEvents = \App\Models\Event::all();
+         $listFeedbacks = \App\Models\Feedback::all();
+        return view("admin/feedback/ajoutfeedback" , compact("listEvents") , compact("listFeedbacks"));
     }
 
     /**
@@ -41,7 +42,7 @@ class FeedbackController extends Controller
       $feedback = new \App\Models\Feedback;
       $feedback->description = $request->description;
       $event->feedbacks()->save($feedback);
-       return redirect()->route('feedback.showfeedback');
+       return redirect()->route('feedback.create');
 
     }
     /**
@@ -79,7 +80,7 @@ class FeedbackController extends Controller
     {
        $Feedback = \App\Models\Feedback::find($id);
               $Feedback::where('id' , $id)->update($request->all());
-              return redirect()->route('feedback.showfeedback') ->with('success','Feedback updated successfully.');
+              return redirect()->route('feedback.create') ->with('success','Feedback updated successfully.');
     }
 
     /**
@@ -92,6 +93,6 @@ class FeedbackController extends Controller
     {
         $feedback = \App\Models\Feedback::find($id);
                 $feedback->delete();
-                return redirect()->route('feedback.showfeedback') ->with('success','Feedback deleted successfully.');;
+                return redirect()->route('feedback.create') ->with('success','Feedback deleted successfully.');;
     }
 }

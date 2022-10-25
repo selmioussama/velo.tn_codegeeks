@@ -14,6 +14,7 @@ class EventController extends Controller
     public function index()
     {
         $listEvents = \App\Models\Event::all();
+        //dd($listEvents);
         return view("admin/event/showevent", compact("listEvents"));
     }
 
@@ -51,9 +52,10 @@ class EventController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show()
     {
-        return view("admin/event/editevent");
+             $listEvents = \App\Models\Event::all();
+             return view("admin/event/eventsfrontoffice", compact("listEvents"));
     }
 
     /**
