@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AssociationController;
+use App\Http\Controllers\DonController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\FeedbackController;
@@ -45,3 +47,8 @@ Route::get('/storeFeedback',[FeedbackController::class,'store'])->name('feedback
 Route::get('/feedbackdelete/{id?}',[FeedbackController::class,'destroy'])->name('feedback.delete');
 Route::get('/feedbackEdit/{id?}',[FeedbackController::class,'edit'])->name('feedback.edit');
 Route::get('/updateFeedback/{id?}',[FeedbackController::class,'update'])->name('feedback.update');
+
+Route::resource('associations', AssociationController::class);
+Route::resource('dons', DonController::class);
+route::get('/association',[AssociationController::class,'indexs']);
+
