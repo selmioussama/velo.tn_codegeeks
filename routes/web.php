@@ -1,8 +1,14 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AssociationController;
+use App\Http\Controllers\DonController;
 use Illuminate\Support\Facades\Route;
+
 use App\Http\Controllers\AdminController;
+
+use App\Http\Controllers\EventController;
+use App\Http\Controllers\FeedbackController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,11 +34,36 @@ Route::middleware([
 });
 
 route::get('/redirect',[HomeController::class,'redirect']);
+
 route::get('/view_category',[AdminController::class,'view_category']);
 route::post('/add_category',[AdminController::class,'add_category']);
 route::get('/delete_category/{id}',[AdminController::class,'delete_category']);
 route::get('/view_velo',[AdminController::class,'view_velo']);
 route::post('/add_velo',[AdminController::class,'add_velo']);
 route::get('/show_velos',[AdminController::class,'show_velos']);
+
+
+
+
+
+Route::get('/events',[EventController::class,'index'])->name('event.showevent');
+Route::get('/eventsfront',[EventController::class,'show'])->name('event.show');
+Route::get('/createEvent',[EventController::class,'create'])->name('event.create');
+Route::get('/storeEvent',[EventController::class,'store'])->name('event.store');
+Route::get('/eventdelete/{id?}',[EventController::class,'destroy'])->name('event.delete');
+Route::get('/eventEdit/{id?}',[EventController::class,'edit'])->name('event.edit');
+Route::get('/updateEvent/{id?}',[EventController::class,'update'])->name('event.update');
+
+
+Route::get('/feedbacks',[FeedbackController::class,'index'])->name('feedback.showfeedback');
+Route::get('/createFeedback',[FeedbackController::class,'create'])->name('feedback.create');
+Route::get('/storeFeedback',[FeedbackController::class,'store'])->name('feedback.store');
+Route::get('/feedbackdelete/{id?}',[FeedbackController::class,'destroy'])->name('feedback.delete');
+Route::get('/feedbackEdit/{id?}',[FeedbackController::class,'edit'])->name('feedback.edit');
+Route::get('/updateFeedback/{id?}',[FeedbackController::class,'update'])->name('feedback.update');
+
+Route::resource('associations', AssociationController::class);
+Route::resource('dons', DonController::class);
+route::get('/association',[AssociationController::class,'indexs']);
 
 

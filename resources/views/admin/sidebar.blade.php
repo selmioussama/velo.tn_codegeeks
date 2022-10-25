@@ -28,16 +28,46 @@
         <li class="nav-item nav-category"><span class="nav-link">UI Elements</span></li>
         <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+
                 <span class="menu-title">Velos</span>
+
+
+
                 <i class="icon-layers menu-icon"></i>
             </a>
             <div class="collapse" id="ui-basic">
                 <ul class="nav flex-column sub-menu">
+
                     <li class="nav-item"> <a class="nav-link" href="{{url('/view_velo')}}">Add Velo</a></li>
                     <li class="nav-item"> <a class="nav-link" href="{{url('/show_velos')}}">Show Velos</a></li>
+
+
+
                 </ul>
             </div>
         </li>
+
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+
+
+
+                <span class="menu-title">Events & Feedbacks</span>
+
+                <i class="icon-layers menu-icon"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+                <ul class="nav flex-column sub-menu">
+
+
+
+                    <li class="nav-item"> <a class="nav-link" href="http://127.0.0.1:8000/events">Events</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="http://127.0.0.1:8000/createFeedback?">Feedbaks</a></li>
+
+                </ul>
+            </div>
+        </li>
+
         <li class="nav-item">
             <a class="nav-link" href='{{url('view_category')}}'>
                 <span class="menu-title">Categories</span>
@@ -45,16 +75,19 @@
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="pages/forms/basic_elements.html">
-                <span class="menu-title">Form Elements</span>
+            <a class="nav-link" href="/associations">
+                <span class="menu-title">Associations</span>
                 <i class="icon-book-open menu-icon"></i>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="pages/charts/chartist.html">
-                <span class="menu-title">Charts</span>
-                <i class="icon-chart menu-icon"></i>
+            <a class="nav-link" href="/dons">
+                <span class="menu-title">Donations</span>
+                <i class="icon-book-open menu-icon"></i>
             </a>
+        </li>
+        <li class="nav-item">
+
         </li>
         <li class="nav-item">
             <a class="nav-link" href="pages/tables/basic-table.html">

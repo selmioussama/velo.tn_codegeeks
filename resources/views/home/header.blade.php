@@ -23,6 +23,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="cycle.html"> Our cycles </a>
                         </li>
+                         <li class="nav-item">
+                          <a class="nav-link" href="http://127.0.0.1:8000/eventsfront"> Events </a>
+                           </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">Contact us</a>
                         </li>
