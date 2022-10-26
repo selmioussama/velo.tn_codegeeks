@@ -104,6 +104,24 @@
 
         </li>
         <li class="nav-item">
+            <a class="nav-link" href="/promotion">
+                <span class="menu-title">promotions</span>
+                <i class="icon-book-open menu-icon"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/accessoire">
+                <span class="menu-title">accessoires</span>
+                <i class="icon-book-open menu-icon"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+
+        </li>
+        <li class="nav-item">
             <a class="nav-link" href="pages/tables/basic-table.html">
                 <span class="menu-title">Tables</span>
                 <i class="icon-grid menu-icon"></i>
