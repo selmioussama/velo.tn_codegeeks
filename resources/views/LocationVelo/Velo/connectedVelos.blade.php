@@ -46,7 +46,9 @@
         <th scope="col">prix</th>
         <th scope="col">start_date</th>
         <th scope="col">end_date</th>
-        <th scope="col">action</th>
+        <th scope="col">update</th>
+
+        <th scope="col">delete</th>
 
     </tr>
     </thead>

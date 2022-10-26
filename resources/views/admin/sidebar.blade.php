@@ -29,17 +29,26 @@
         <li class="nav-item nav-category"><span class="nav-link">utilities</span></li>
         <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-                <span class="menu-title">Events & Feedbacks</span>
+
+                <span class="menu-title">Velos</span>
+
+
+
                 <i class="icon-layers menu-icon"></i>
             </a>
             <div class="collapse" id="ui-basic">
                 <ul class="nav flex-column sub-menu">
-                    <li class="nav-item"> <a class="nav-link" href="http://127.0.0.1:8000/events">Events</a></li>
-                    <li class="nav-item"> <a class="nav-link" href="http://127.0.0.1:8000/createFeedback?">Feedbaks</a></li>
+
+                    <li class="nav-item"> <a class="nav-link" href="{{url('/view_velo')}}">Add Velo</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="{{url('/show_velos')}}">Show Velos</a></li>
+
+
+
                 </ul>
             </div>
 
         </li>
+
         <li class="nav-item">
 
         </li>
@@ -52,14 +61,79 @@
         <li class="nav-item">
             <a class="nav-link" href="http://127.0.0.1:8000/complaints">
                 <span class="menu-title">complaint</span>
+
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+
+
+
+                <span class="menu-title">Events & Feedbacks</span>
+
+                <i class="icon-layers menu-icon"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+                <ul class="nav flex-column sub-menu">
+
+
+
+                    <li class="nav-item"> <a class="nav-link" href="http://127.0.0.1:8000/events">Events</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="http://127.0.0.1:8000/createFeedback?">Feedbaks</a></li>
+
+                </ul>
+            </div>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href='{{url('view_category')}}'>
+                <span class="menu-title">Categories</span>
+                <i class="icon-globe menu-icon"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/associations">
+                <span class="menu-title">Associations</span>
+                <i class="icon-book-open menu-icon"></i>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="/reclamations">
+                <span class="menu-title">Reclamations</span>
+                <i class="icon-book-open menu-icon"></i>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="/repairs">
+                <span class="menu-title">Reparation</span>
                 <i class="icon-book-open menu-icon"></i>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="pages/charts/chartist.html">
-                <span class="menu-title">Charts</span>
-                <i class="icon-chart menu-icon"></i>
+            <a class="nav-link" href="/dons">
+                <span class="menu-title">Donations</span>
+                <i class="icon-book-open menu-icon"></i>
             </a>
+        </li>
+        <li class="nav-item">
+
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/promotion">
+                <span class="menu-title">promotions</span>
+                <i class="icon-book-open menu-icon"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/accessoire">
+                <span class="menu-title">accessoires</span>
+                <i class="icon-book-open menu-icon"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+
         </li>
         <li class="nav-item">
             <a class="nav-link" href="pages/tables/basic-table.html">

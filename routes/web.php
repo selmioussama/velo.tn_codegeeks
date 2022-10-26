@@ -1,12 +1,26 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AssociationController;
+use App\Http\Controllers\DonController;
 use Illuminate\Support\Facades\Route;
+
+use App\Http\Controllers\AdminController;
+
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\FeedbackController;
 use App\Http\Controllers\VeloLController;
 use App\Http\Controllers\LocationVeloController;
 use App\Http\Controllers\ComplaintController;
+
+
+use App\Http\Controllers\AccessoireController;
+use App\Http\Controllers\PromotionController;
+
+
+
+use App\Http\Controllers\ReclamationController;
+use App\Http\Controllers\RepairController;
 
 
 /*
@@ -34,6 +48,16 @@ Route::middleware([
 
 route::get('/redirect',[HomeController::class,'redirect']);
 
+route::get('/view_category',[AdminController::class,'view_category']);
+route::post('/add_category',[AdminController::class,'add_category']);
+route::get('/delete_category/{id}',[AdminController::class,'delete_category']);
+route::get('/view_velo',[AdminController::class,'view_velo']);
+route::post('/add_velo',[AdminController::class,'add_velo']);
+route::get('/show_velos',[AdminController::class,'show_velos']);
+
+
+
+
 
 Route::get('/events',[EventController::class,'index'])->name('event.showevent');
 Route::get('/eventsfront',[EventController::class,'show'])->name('event.show');
@@ -60,3 +84,15 @@ Route::resource("veloLs",VeloLController::class);
 Route::get("/myVelos",[VeloLController::class, 'getconnectedVelos']);
 Route::get("/veloAdmin",[VeloLController::class, 'LocationVeloAdmin']);
 Route::resource("complaints",ComplaintController::class);
+Route::resource('associations', AssociationController::class);
+Route::resource('dons', DonController::class);
+route::get('/association',[AssociationController::class,'indexs']);
+
+Route::resource('accessoire', AccessoireController::class);
+Route::resource('/promotion', PromotionController::class);
+
+
+Route::resource('reclamations', ReclamationController::class);
+Route::resource('repairs', RepairController::class);
+
+
