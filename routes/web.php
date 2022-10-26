@@ -9,6 +9,8 @@ use App\Http\Controllers\AdminController;
 
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\FeedbackController;
+use App\Http\Controllers\AccessoireController;
+use App\Http\Controllers\PromotionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -65,5 +67,8 @@ Route::get('/updateFeedback/{id?}',[FeedbackController::class,'update'])->name('
 Route::resource('associations', AssociationController::class);
 Route::resource('dons', DonController::class);
 route::get('/association',[AssociationController::class,'indexs']);
+
+Route::resource('accessoire', AccessoireController::class);
+Route::resource('/promotion', PromotionController::class);
 
 
