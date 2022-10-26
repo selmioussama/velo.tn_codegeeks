@@ -47,8 +47,8 @@
     <div class="card">
 
         <div class="card-body">
-            <h4 class="card-title text-center">Post a reclamation </h4>
-            <form class="forms-sample" action="{{route("reclamations.store")}}" method="post" enctype="multipart/form-data">
+            <h4 class="card-title text-center">Post a complaints </h4>
+            <form class="forms-sample" action="{{route("complaints.store")}}" method="post" enctype="multipart/form-data">
                 @csrf
 
                 <div class="form-group row">

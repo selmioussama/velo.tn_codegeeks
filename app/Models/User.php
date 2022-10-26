@@ -66,6 +66,6 @@ class User extends Authenticatable
         return $this->hasMany(veloL::class,foreignKey: 'user_id');
 }
     public function reclamation(){
-        return $this->hasMany(reclamation::class,foreignKey: 'user_id');
+        return $this->hasMany(complaint::class,foreignKey: 'user_id');
     }
 }

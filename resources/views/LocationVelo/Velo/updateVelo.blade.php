@@ -96,7 +96,7 @@
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="exampleInputMobile" class="col-sm-3 col-form-label">Date fin</label>
+                    <label for="exampleInputMobile" class="col-sm-3 col-form-label">Description</label>
                     <div class="col-sm-9">
                         <input type="text" class="form-control"  name="Description" id="exampleInputMobile" value="{{$velo->description}}">
                     </div>

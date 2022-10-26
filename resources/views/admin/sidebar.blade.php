@@ -50,8 +50,8 @@
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="http://127.0.0.1:8000/reclamations">
-                <span class="menu-title">Reclamations</span>
+            <a class="nav-link" href="http://127.0.0.1:8000/complaints">
+                <span class="menu-title">complaint</span>
                 <i class="icon-book-open menu-icon"></i>
             </a>
         </li>

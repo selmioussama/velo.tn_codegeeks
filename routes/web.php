@@ -6,7 +6,7 @@ use App\Http\Controllers\EventController;
 use App\Http\Controllers\FeedbackController;
 use App\Http\Controllers\VeloLController;
 use App\Http\Controllers\LocationVeloController;
-use App\Http\Controllers\ReclamationController;
+use App\Http\Controllers\ComplaintController;
 
 
 /*
@@ -59,4 +59,4 @@ Route::get('/updateFeedback/{id?}',[FeedbackController::class,'update'])->name('
 Route::resource("veloLs",VeloLController::class);
 Route::get("/myVelos",[VeloLController::class, 'getconnectedVelos']);
 Route::get("/veloAdmin",[VeloLController::class, 'LocationVeloAdmin']);
-Route::resource("reclamations",ReclamationController::class);
+Route::resource("complaints",ComplaintController::class);

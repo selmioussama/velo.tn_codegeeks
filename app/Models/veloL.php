@@ -24,7 +24,7 @@ class veloL extends Model
         return $this->belongsTo(User::class);
     }
     public function reclamation(){
-        return $this->hasMany(reclamation::class,foreignKey: 'veloL_id');
+        return $this->hasMany(complaint::class,foreignKey: 'veloL_id');
     }
 
 }

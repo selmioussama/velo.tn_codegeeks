@@ -13,9 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('location_velos', function (Blueprint $table) {
+        Schema::create('complaints', function (Blueprint $table) {
             $table->id();
-            
+            $table->string("title");
+            $table->string("description");
+            $table->foreignId("user_id")->constrained("users");
+            $table->foreignId("veloL_id")->constrained("velo_l_s");
+
             $table->timestamps();
         });
     }
@@ -27,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('location_velos');
+        Schema::dropIfExists('complaints');
     }
 };

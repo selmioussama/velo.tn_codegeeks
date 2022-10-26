@@ -23,7 +23,7 @@
         <div class="col-lg-10 grid-margin stretch-card">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">All reclamations </h4>
+                    <h4 class="card-title">All complaints </h4>
 
 
                     </p>
@@ -38,17 +38,17 @@
                         </tr>
                         </thead>
                         <tbody>
-                        @foreach($reclamation as $r)
+                        @foreach($complaint as $r)
                             <tr>
                                 <td>{{ $r->id }}</td>
                                 <td>{{ $r->title }}</td>
                                 <td>{{ $r->description }}</td>
 
                                <td>
-                                    <a class="btn btn-info" href="{{route("reclamations.show",$r->id)}}">
+                                    <a class="btn btn-info" href="{{route("complaints.show",$r->id)}}">
                                        View info
                                     </a>
-                               </td>                                <td> <form action="{{route("reclamations.destroy",$r->id)}}" method="post">
+                               </td>                                <td> <form action="{{route("complaints.destroy",$r->id)}}" method="post">
                                         @method('DELETE')
                                         @csrf
                                         <button type="submit" class="btn btn-danger"> delete</button>

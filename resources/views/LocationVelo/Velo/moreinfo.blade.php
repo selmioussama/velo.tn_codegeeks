@@ -130,10 +130,10 @@
 </div>
 
 <br><br><br>
-<h1 class="text-center"> Post a reclamation</h1>
+<h1 class="text-center"> Post a complaints</h1>
 <div class="card-body">
     <h4 class="card-title text-center">  </h4>
-    <form action="{{route("reclamations.store")}}" method="post" >
+    <form action="{{route("complaints.store")}}" method="post" >
         @csrf
 
         <div class="form-group row">
