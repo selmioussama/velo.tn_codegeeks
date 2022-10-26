@@ -15,6 +15,11 @@ use App\Http\Controllers\AccessoireController;
 use App\Http\Controllers\PromotionController;
 
 
+
+use App\Http\Controllers\ReclamationController;
+use App\Http\Controllers\RepairController;
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
