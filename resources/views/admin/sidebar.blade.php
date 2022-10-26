@@ -80,6 +80,20 @@
                 <i class="icon-book-open menu-icon"></i>
             </a>
         </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="/reclamations">
+                <span class="menu-title">Reclamations</span>
+                <i class="icon-book-open menu-icon"></i>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="/repairs">
+                <span class="menu-title">Reparation</span>
+                <i class="icon-book-open menu-icon"></i>
+            </a>
+        </li>
         <li class="nav-item">
             <a class="nav-link" href="/dons">
                 <span class="menu-title">Donations</span>

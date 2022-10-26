@@ -9,8 +9,11 @@ use App\Http\Controllers\AdminController;
 
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\FeedbackController;
+
+
 use App\Http\Controllers\AccessoireController;
 use App\Http\Controllers\PromotionController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -70,5 +73,9 @@ route::get('/association',[AssociationController::class,'indexs']);
 
 Route::resource('accessoire', AccessoireController::class);
 Route::resource('/promotion', PromotionController::class);
+
+
+Route::resource('reclamations', ReclamationController::class);
+Route::resource('repairs', RepairController::class);
 
 
