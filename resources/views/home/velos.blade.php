@@ -6,6 +6,7 @@
             </h2>
         </div>
         <div class="cycle_container">
+
             <div class="box">
                 <div class="box-content">
                     <div class="img-box">

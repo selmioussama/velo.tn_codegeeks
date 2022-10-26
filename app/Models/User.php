@@ -62,4 +62,10 @@ class User extends Authenticatable
     protected $appends = [
         'profile_photo_url',
     ];
+    public function veloL(){
+        return $this->hasMany(veloL::class,foreignKey: 'user_id');
+}
+    public function reclamation(){
+        return $this->hasMany(reclamation::class,foreignKey: 'user_id');
+    }
 }

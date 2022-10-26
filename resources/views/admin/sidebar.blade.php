@@ -22,12 +22,11 @@
         <li class="nav-item">
             <a class="nav-link" href="index.html">
                 <span class="menu-title">Dashboard</span>
-                <a href="{{ route("velo") }}">velo</a>
 
                 <i class="icon-screen-desktop menu-icon"></i>
             </a>
         </li>
-        <li class="nav-item nav-category"><span class="nav-link">UI Elements</span></li>
+        <li class="nav-item nav-category"><span class="nav-link">utilities</span></li>
         <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
                 <span class="menu-title">Events & Feedbacks</span>
@@ -39,16 +38,20 @@
                     <li class="nav-item"> <a class="nav-link" href="http://127.0.0.1:8000/createFeedback?">Feedbaks</a></li>
                 </ul>
             </div>
+
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="pages/icons/simple-line-icons.html">
-                <span class="menu-title">Icons</span>
-                <i class="icon-globe menu-icon"></i>
+
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:8000/veloAdmin">
+                <span class="menu-title">Location Velo</span>
+                <i class="icon-book-open menu-icon"></i>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="pages/forms/basic_elements.html">
-                <span class="menu-title">Form Elements</span>
+            <a class="nav-link" href="http://127.0.0.1:8000/reclamations">
+                <span class="menu-title">Reclamations</span>
                 <i class="icon-book-open menu-icon"></i>
             </a>
         </li>

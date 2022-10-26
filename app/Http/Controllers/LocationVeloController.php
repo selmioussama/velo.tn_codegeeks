@@ -14,7 +14,6 @@ class LocationVeloController extends Controller
      */
     public function index()
     {
-        //
     }
 
     /**

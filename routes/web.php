@@ -4,6 +4,11 @@ use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\FeedbackController;
+use App\Http\Controllers\VeloLController;
+use App\Http\Controllers\LocationVeloController;
+use App\Http\Controllers\ReclamationController;
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -45,3 +50,13 @@ Route::get('/storeFeedback',[FeedbackController::class,'store'])->name('feedback
 Route::get('/feedbackdelete/{id?}',[FeedbackController::class,'destroy'])->name('feedback.delete');
 Route::get('/feedbackEdit/{id?}',[FeedbackController::class,'edit'])->name('feedback.edit');
 Route::get('/updateFeedback/{id?}',[FeedbackController::class,'update'])->name('feedback.update');
+
+
+//
+//Route::get('/VeloLs/add',[VeloLController::class,'create']);
+//Route::get("/allLocationVelo",[VeloLController::class , 'index']);
+//Route::get('createVelo',[VeloLController::class,'store']);
+Route::resource("veloLs",VeloLController::class);
+Route::get("/myVelos",[VeloLController::class, 'getconnectedVelos']);
+Route::get("/veloAdmin",[VeloLController::class, 'LocationVeloAdmin']);
+Route::resource("reclamations",ReclamationController::class);
