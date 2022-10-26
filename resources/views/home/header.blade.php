@@ -1,7 +1,7 @@
 <header class="header_section">
     <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="{{url('/')}}">
                 <img src="images/logo.png" alt="">
                 <span>
               Jetcycle
@@ -15,7 +15,7 @@
                 <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
                     <ul class="navbar-nav  ">
                         <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="{{url('/')}}">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="about.html">About </a>
@@ -52,7 +52,7 @@
                         <a href="" class="call_link">
                             <span> Call Now: </span>+01 1234567890
                         </a>
-                        <a href="" class="cart_link">
+                        <a href="{{url('show_cart')}}" class="cart_link">
                             <img src="images/cart.png" alt="">
                             <span class="cart_number">
                     0

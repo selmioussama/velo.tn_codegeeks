@@ -55,25 +55,25 @@
                             <form class="forms-sample" action="{{ route('event.store') }}" method="get">
                               <div class="form-group">
                                 <label for="exampleInputName1">Title</label>
-                                <input type="text" class="form-control" name="title" placeholder="title" >
+                                <input type="text" class="form-control" name="title" placeholder="title" required="" >
                               </div>
                               <div class="form-group">
                                 <label for="exampleInputEmail3">Description</label>
-                                <input type="text" class="form-control" id="description" name="description" placeholder="description">
+                                <input type="text" class="form-control" id="description" name="description" placeholder="description" required="">
                               </div>
                               <div class="form-group">
                                 <label for="exampleInputPassword4">Place</label>
-                                <input type="text" class="form-control" name="place" id="place" placeholder="place">
+                                <input type="text" class="form-control" name="place" id="place" placeholder="place" required="">
                               </div>
 
 
                               <div class="form-group">
                                 <label for="exampleInputCity1">Start Date</label>
-                                <input type="date" class="form-control" name="start_date" id="start_date" placeholder="startdate">
+                                <input type="date" class="form-control" name="start_date" id="start_date" placeholder="startdate" required="">
                               </div>
                                <div class="form-group">
                                <label for="exampleInputCity1">Start Date</label>
-                               <input type="date" class="form-control" name="end_date" id="end_date" placeholder="end date">
+                               <input type="date" class="form-control" name="end_date" id="end_date" placeholder="end date" required="">
                                 </div>
                               <button type="submit"  class="btn btn-primary mr-2">Submit</button>
                             </form>

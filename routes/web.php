@@ -41,6 +41,13 @@ route::get('/delete_category/{id}',[AdminController::class,'delete_category']);
 route::get('/view_velo',[AdminController::class,'view_velo']);
 route::post('/add_velo',[AdminController::class,'add_velo']);
 route::get('/show_velos',[AdminController::class,'show_velos']);
+route::get('/delete_velo/{id}',[AdminController::class,'delete_velo']);
+route::get('/update_velo/{id}',[AdminController::class,'update_velo']);
+route::post('/update_velo_confirm/{id}',[AdminController::class,'update_velo_confirm']);
+route::get('/velo_details/{id}',[HomeController::class,'velo_details']);
+route::post('/add_cart/{id}',[HomeController::class,'add_cart']);
+route::get('/show_cart',[HomeController::class,'show_cart']);
+route::get('/remove_cart/{id}',[HomeController::class,'remove_cart']);
 
 
 

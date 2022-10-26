@@ -32,7 +32,7 @@
             <form class="forms-sample" action="{{ route('feedback.update' , $feedback->id) }}" method="get">
             <div class="form-group">
             <label for="exampleInputEmail3">Feedback</label>
-            <input type="text" class="form-control" name="description" placeholder="description" value="{{ $feedback->description}}">
+            <input required="" type="text" class="form-control" name="description" placeholder="description" value="{{ $feedback->description}}">
             </div>
 
              <button type="submit"  class="btn btn-primary mr-2">Update</button>

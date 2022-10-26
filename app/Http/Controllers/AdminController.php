@@ -58,5 +58,50 @@ class AdminController extends Controller
         return view('admin.show_velos', compact('velos'));
     }
 
+    public function delete_velo($id){
+        $velo= velo::find($id);
+        $velo->delete();
+
+        return redirect()->back()->with('message','Velo Deleted Successfuly');
+
+    }
+
+    public function update_velo($id){
+
+        $velo= velo::find($id);
+        $category =category::all();
+
+        return view('admin.update_velo', compact('velo','category'));
+    }
+
+    public function update_velo_confirm(Request $request , $id)
+    {
+        $velo= velo::find($id);
+
+        $velo->velo_name =$request->velo_name;
+        $velo->brand =$request->brand;
+        $velo->description =$request->description;
+        $velo->category =$request->category;
+        $velo->quantity =$request->quantity;
+        $velo->price =$request->price;
+        $velo->discount_price =$request->discount_price;
+
+        $image=$request->image;
+
+        if ($image)
+        {
+            $imagename=time().'.'.$image->getClientOriginalExtension();
+            $request->image->move('velo',$imagename);
+            $velo->image=$imagename;
+        }
+
+
+        $velo->save();
+        return redirect('/show_velos')->with('message','Velo Updated Successfuly');
+
+
+
+    }
+
 
 };

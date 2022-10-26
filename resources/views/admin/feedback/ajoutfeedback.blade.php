@@ -30,7 +30,7 @@
 
                               <div class="form-group">
                                 <label for="exampleInputEmail3">Feedback</label>
-                                <input type="text" class="form-control" id="description" name="description" placeholder="feedback">
+                                <input required="" required="" type="text" class="form-control" id="description" name="description" placeholder="feedback">
                              </div>
                                    <div class="form-group">
                                                       <label for="exampleSelectGender">ID Event</label>

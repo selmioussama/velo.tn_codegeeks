@@ -29,24 +29,24 @@
                                 <form class="forms-sample" action="{{ route('event.update' , $event->id) }}" method="get">
                                    <div class="form-group">
                                     <label for="exampleInputEmail3">Title</label>
-                                   <input type="text" class="form-control" name="title" id="title" placeholder="place" value="{{ $event->title}}" >
+                                   <input required="" type="text" class="form-control" name="title" id="title" placeholder="place" value="{{ $event->title}}" >
                                      </div>
                                   <div class="form-group">
                                  <label for="exampleInputEmail3">Place</label>
-                                 <input type="text" class="form-control" name="place" id="description" placeholder="place" value="{{ $event->place}}" >
+                                 <input required="" type="text" class="form-control" name="place" id="description" placeholder="place" value="{{ $event->place}}" >
                                  </div>
 
                                  <div class="form-group">
                                  <label for="exampleInputEmail3">Description</label>
-                                 <input type="text" class="form-control" name="description" id="description" placeholder="description" value="{{ $event->description}}" >
+                                 <input required="" type="text" class="form-control" name="description" id="description" placeholder="description" value="{{ $event->description}}" >
                                  </div>
                                  <div class="form-group">
                                  <label for="exampleInputEmail3">Start date</label>
-                                  <input type="date" class="form-control" name="start_date" id="start_date" placeholder="end date" value="{{ $event->start_date}}" >
+                                  <input required="" type="date" class="form-control" name="start_date" id="start_date" placeholder="end date" value="{{ $event->start_date}}" >
                                   </div>
                                  <div class="form-group">
                                  <label for="exampleInputEmail3">End date</label>
-                                  <input type="date" class="form-control" name="end_date" id="end_date" placeholder="end date" value="{{ $event->end_date}}" >
+                                  <input required="" type="date" class="form-control" name="end_date" id="end_date" placeholder="end date" value="{{ $event->end_date}}" >
                                  </div>
 
 
