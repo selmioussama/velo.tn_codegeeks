@@ -8,8 +8,13 @@
 
 
         <div class="cycle_container">
+
             @foreach($velo as $velos)
             <div class="box" >
+
+
+            <div class="box">
+
                 <div class="box-content">
                     <div class="img-box">
                         <img height="300px" width="200px" src="velo/{{$velos->image}}" alt="">

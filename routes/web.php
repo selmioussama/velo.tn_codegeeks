@@ -9,6 +9,19 @@ use App\Http\Controllers\AdminController;
 
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\FeedbackController;
+use App\Http\Controllers\VeloLController;
+use App\Http\Controllers\LocationVeloController;
+use App\Http\Controllers\ComplaintController;
+
+
+use App\Http\Controllers\AccessoireController;
+use App\Http\Controllers\PromotionController;
+
+
+
+use App\Http\Controllers\ReclamationController;
+use App\Http\Controllers\RepairController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -69,8 +82,24 @@ Route::get('/feedbackdelete/{id?}',[FeedbackController::class,'destroy'])->name(
 Route::get('/feedbackEdit/{id?}',[FeedbackController::class,'edit'])->name('feedback.edit');
 Route::get('/updateFeedback/{id?}',[FeedbackController::class,'update'])->name('feedback.update');
 
+
+//
+//Route::get('/VeloLs/add',[VeloLController::class,'create']);
+//Route::get("/allLocationVelo",[VeloLController::class , 'index']);
+//Route::get('createVelo',[VeloLController::class,'store']);
+Route::resource("veloLs",VeloLController::class);
+Route::get("/myVelos",[VeloLController::class, 'getconnectedVelos']);
+Route::get("/veloAdmin",[VeloLController::class, 'LocationVeloAdmin']);
+Route::resource("complaints",ComplaintController::class);
 Route::resource('associations', AssociationController::class);
 Route::resource('dons', DonController::class);
 route::get('/association',[AssociationController::class,'indexs']);
+
+Route::resource('accessoire', AccessoireController::class);
+Route::resource('/promotion', PromotionController::class);
+
+
+Route::resource('reclamations', ReclamationController::class);
+Route::resource('repairs', RepairController::class);
 
 

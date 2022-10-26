@@ -22,10 +22,11 @@
         <li class="nav-item">
             <a class="nav-link" href="index.html">
                 <span class="menu-title">Dashboard</span>
+
                 <i class="icon-screen-desktop menu-icon"></i>
             </a>
         </li>
-        <li class="nav-item nav-category"><span class="nav-link">UI Elements</span></li>
+        <li class="nav-item nav-category"><span class="nav-link">utilities</span></li>
         <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
 
@@ -45,9 +46,22 @@
 
                 </ul>
             </div>
+
         </li>
 
         <li class="nav-item">
+
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:8000/veloAdmin">
+                <span class="menu-title">Location Velo</span>
+                <i class="icon-book-open menu-icon"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:8000/complaints">
+                <span class="menu-title">complaint</span>
+
             <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
 
 
@@ -80,9 +94,41 @@
                 <i class="icon-book-open menu-icon"></i>
             </a>
         </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="/reclamations">
+                <span class="menu-title">Reclamations</span>
+                <i class="icon-book-open menu-icon"></i>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="/repairs">
+                <span class="menu-title">Reparation</span>
+                <i class="icon-book-open menu-icon"></i>
+            </a>
+        </li>
         <li class="nav-item">
             <a class="nav-link" href="/dons">
                 <span class="menu-title">Donations</span>
+                <i class="icon-book-open menu-icon"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/promotion">
+                <span class="menu-title">promotions</span>
+                <i class="icon-book-open menu-icon"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/accessoire">
+                <span class="menu-title">accessoires</span>
                 <i class="icon-book-open menu-icon"></i>
             </a>
         </li>

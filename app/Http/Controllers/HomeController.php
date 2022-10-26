@@ -27,6 +27,7 @@ class HomeController extends Controller
 
     }
 
+
     public function velo_details ($id){
 
         $velo= velo::find($id);
@@ -92,4 +93,7 @@ class HomeController extends Controller
         $cart->delete();
         return redirect()->back();
     }
+
+
+
 }
